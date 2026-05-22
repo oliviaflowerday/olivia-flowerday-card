@@ -1,327 +1,50 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0b1220" />
-  <title>Olivia Flowerday — Digital Business Card</title>
+<section class="content" aria-label="Contact actions and QR">
+  <p class="headline">Let’s connect—choose an option below to reach me quickly.</p>
 
-  <style>
-    :root{
-      --bg0:#070b14;
-      --bg1:#0a1022;
-      --card:#0b1220cc;
-      --card2:#0b1220f2;
-      --stroke:rgba(255,255,255,.10);
-      --text:rgba(255,255,255,.92);
-      --muted:rgba(255,255,255,.72);
-      --shadow: 0 24px 60px rgba(0,0,0,.55);
-      --radius:22px;
-      --btnText:rgba(255,255,255,.92);
-      --focus: 0 0 0 3px rgba(0,214,200,.25);
-    }
+  <div class="row" aria-label="Quick details">
+    <div class="left">
+      <div class="label">Email</div>
+      <div class="value">oflowerdsay@kpmg.co.nz</div>
+    </div>
+    <div class="left" style="text-align:right;">
+      <div class="label">Mobile</div>
+      <div class="value">+64 27 919 8811</div>
+    </div>
+  </div>
 
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text);
-      background:
-        radial-gradient(1200px 700px at 20% -10%, rgba(47,99,255,.18), transparent 55%),
-        radial-gradient(900px 600px at 95% 15%, rgba(0,214,200,.16), transparent 55%),
-        linear-gradient(180deg, var(--bg0), var(--bg1));
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:28px 16px;
-    }
+  <div class="grid" aria-label="Action buttons">
+    oflowerdsay@kpmg.co.nz
+      <span>Email</span>
+      <span class="note">mailto</span>
+    </a>
 
-    .card{
-      width:100%;
-      max-width:420px;
-      border-radius:var(--radius);
-      background: linear-gradient(180deg, var(--card2), var(--card));
-      border:1px solid var(--stroke);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
+    tel:+64279198811
+      <span>Mobile</span>
+      <span class="note">tap to call</span>
+    </a>
 
-    .banner{
-      padding:22px 22px 18px;
-      position:relative;
-      background:
-        radial-gradient(900px 220px at 18% 18%, rgba(255,255,255,.10), transparent 55%),
-        linear-gradient(135deg, rgba(0,163,214,.95), rgba(0,214,200,.88) 55%, rgba(47,99,255,.70));
-      border-bottom:1px solid rgba(255,255,255,.12);
-    }
+    https://outlook.office.com/bookwithme/
+      <span>Book time</span>
+      <span class="note">Bookings</span>
+    </a>
 
-    .name{
-      margin:0;
-      font-size:1.45rem;
-      line-height:1.15;
-      letter-spacing:.2px;
-      font-weight:750;
-      text-shadow: 0 10px 28px rgba(0,0,0,.25);
-    }
+    https://www.linkedin.com/in/olivia-flowerday
+      <span>LinkedIn</span>
+      <span class="note">profile</span>
+    </a>
 
-    .role{
-      margin:8px 0 0;
-      font-size:.98rem;
-      line-height:1.25;
-      font-weight:600;
-      color:rgba(255,255,255,.92);
-      text-shadow: 0 10px 28px rgba(0,0,0,.20);
-    }
+    olivia-flowerday.vcf
+      <span>Save contact (.vcf)</span>
+      <span class="note">add to phone</span>
+    </a>
+  </div>
 
-    .meta{
-      margin:10px 0 0;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      align-items:center;
-      color:rgba(255,255,255,.88);
-      font-size:.92rem;
-    }
+  <div class="qrwrap" aria-label="QR code">
+    qr.png
+    <p class="small" style="margin:10px 0 0 0; color: rgba(232,238,252,.75);">Scan to open this card</p>
+  </div>
+</section>
 
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:7px 10px;
-      border-radius:999px;
-      background:rgba(0,0,0,.18);
-      border:1px solid rgba(255,255,255,.16);
-      box-shadow: 0 10px 26px rgba(0,0,0,.18);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
-
-    .content{
-      padding:18px 22px 20px;
-    }
-
-    .headline{
-      margin:0 0 14px;
-      font-size:1.02rem;
-      line-height:1.35;
-      color:var(--muted);
-    }
-
-    .grid{
-      display:grid;
-      gap:10px;
-      margin:14px 0 18px;
-    }
-
-    .btn{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      width:100%;
-      text-decoration:none;
-      padding:12px 12px 12px 14px;
-      border-radius:16px;
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      border:1px solid rgba(255,255,255,.10);
-      color:var(--btnText);
-      box-shadow: 0 14px 30px rgba(0,0,0,.20);
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-      user-select:none;
-    }
-    .btn:hover{
-      transform: translateY(-1px);
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      border-color: rgba(255,255,255,.16);
-    }
-    .btn:active{transform: translateY(0px)}
-    .btn:focus-visible{outline:none; box-shadow: var(--focus), 0 14px 30px rgba(0,0,0,.20);}
-
-    .left{
-      display:flex;
-      flex-direction:column;
-      gap:3px;
-      min-width:0;
-    }
-    .label{
-      font-size:.92rem;
-      font-weight:650;
-      letter-spacing:.2px;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-    }
-    .value{
-      font-size:.86rem;
-      color:rgba(255,255,255,.72);
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-    }
-
-    .row{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-    }
-
-    .small{
-      font-size:.86rem;
-      color:rgba(255,255,255,.70);
-    }
-
-    .qrwrap{
-      margin-top:8px;
-      padding:14px 14px 12px;
-      border-radius:18px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
-      text-align:center;
-    }
-    .qrimg{
-      display:block;
-      width:210px;
-      max-width:100%;
-      height:auto;
-      margin:2px auto 8px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.06);
-    }
-
-    .footer{
-      padding:14px 22px 18px;
-      border-top:1px solid rgba(255,255,255,.10);
-      color:rgba(255,255,255,.70);
-      background: rgba(0,0,0,.12);
-    }
-    .note{
-      margin:0;
-      font-size:.90rem;
-      line-height:1.35;
-    }
-
-    .dot{
-      width:8px;height:8px;border-radius:50%;
-      background: rgba(255,255,255,.85);
-      box-shadow: 0 0 0 4px rgba(255,255,255,.12);
-      flex:0 0 auto;
-    }
-    .arrow{
-      width:34px;height:34px;border-radius:12px;
-      display:grid;place-items:center;
-      background: rgba(0,0,0,.18);
-      border:1px solid rgba(255,255,255,.14);
-      flex:0 0 auto;
-    }
-    .arrow svg{opacity:.92}
-  </style>
-</head>
-
-<body>
-  <main class="card" role="main" aria-label="Digital business card">
-    <header class="banner">
-      <h1 class="name">Olivia Flowerday</h1>
-      <p class="role">Senior Manager • KPMG New Zealand</p>
-      <div class="meta" aria-label="Location">
-        <span class="pill">
-          <span class="dot" aria-hidden="true"></span>
-          <span>Hamilton</span>
-        </span>
-      </div>
-    </header>
-
-    <section class="content">
-      <p class="headline">Let’s connect — happy to help.</p>
-
-      <div class="grid" role="list" aria-label="Quick actions">
-        oflowerday@kpmg.co.nz
-          <span class="left">
-            <span class="label">Email</span>
-            <span class="value">oflowerday@kpmg.co.nz</span>
-          </span>
-          <span class="arrow" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path d="M7 17L17 7" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <path d="M9 7h8v8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </a>
-
-        tel:+64279198811
-          <span class="left">
-            <span class="label">Mobile</span>
-            <span class="value">+64 27 919 8811</span>
-          </span>
-          <span class="arrow" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path d="M7 17L17 7" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <path d="M9 7h8v8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </a>
-
-        #
-          <span class="left">
-            <span class="label">Book time</span>
-            <span class="value">Add your bookings link</span>
-          </span>
-          <span class="arrow" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path d="M7 17L17 7" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <path d="M9 7h8v8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </a>
-
-        https://www.linkedin.com/in/olivia-flowerday
-          <span class="left">
-            <span class="label">LinkedIn</span>
-            <span class="value">View profile</span>
-          </span>
-          <span class="arrow" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path d="M7 17L17 7" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <path d="M9 7h8v8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </a>
-
-        first-last.vcf
-          <span class="left">
-            <span class="label">Save contact (.vcf)</span>
-            <span class="value">Add to your contacts</span>
-          </span>
-          <span class="arrow" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path d="M12 3v10" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <path d="M8 11l4 4 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M5 21h14" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </span>
-        </a>
-      </div>
-
-      <div class="qrwrap" aria-label="QR code">
-        <div class="row" style="margin-bottom:10px;">
-          <div class="left">
-            <div class="label">Scan to open this page</div>
-            <div class="small">Point your camera at the code</div>
-          </div>
-        </div>
-        qr.png
-        <div class="small">Works with most phone cameras</div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p class="note">Tip: Tap ‘Save contact’ to add my details, or bookmark this page for easy access.</p>
-    </footer>
-  </main>
-</body>
-</html>
+<footer class="footer" aria-label="Footer tip">
+  <p class="note">Tip: Tap ‘Save contact’ to add my details, or bookmark this page for easy access.</p>
+</footer>
