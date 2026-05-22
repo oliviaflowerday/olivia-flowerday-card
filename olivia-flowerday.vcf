@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Flowerday;Olivia;;;
+FN:Olivia Flowerday
+ORG:KPMG New Zealand
+TITLE:Senior Manager
+EMAIL;TYPE=INTERNET;TYPE=WORK:oflowerday@kpmg.co.nz
+TEL;TYPE=CELL:+64279198811
+TEL;TYPE=WORK:+6478586504
+ADR;TYPE=WORK:;;Level 11\, 85 Alexandra Street;Hamilton;Waikato;;New Zealand
+URL;TYPE=WORK:https://www.linkedin.com/in/olivia-flowerday
+END:VCARD
