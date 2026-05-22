@@ -1,54 +1,147 @@
-<section class="content" aria-label="Contact actions">
-  <p class="headline">Get in touch, book a time, or save my contact details in one tap.</p>
 
-  <div class="grid" role="list">
-    <a class="btn" role="listitem" href="mailto:oflowerday@kpmg.co.nz" aria-label="Email Olivia">
-      <span class="left">
-        <span class="label">Email</span>
-        <span class="value">oflowerday@kpmg.co.nz</span>
-      </span>
-      <span class="pill row"><span class="dot blue" aria-hidden="true"></span><span class="small">Send</span></span>
-    </a>
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Olivia Flowerday</title>
 
-    tel:+64279198811
-      <span class="left">
-        <span class="label">Mobile</span>
-        <span class="value">027 919 8811</span>
-      </span>
-      <span class="pill row"><span class="dot teal" aria-hidden="true"></span><span class="small">Call</span></span>
-    </a>
+<style>
+body{
+  margin:0;
+  font-family:system-ui, sans-serif;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(0,163,161,.25), transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(0,145,213,.25), transparent 60%),
+    #070b14;
+  color:#e9eefc;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
 
-    <a class="btn" role="listitem" href="https://outlook.office.com/bookwithme/" target="_blank" rel="noopener noreferrer" aria-label="Book time with Olivia">
-      <span class="left">
-        <span class="label">Book time</span>
-        <span class="value">Bookings with me</span>
-      </span>
-      <span class="pill row"><span class="dot blue" aria-hidden="true"></span><span class="small">Open</span></span>
-    </a>
+.card{
+  width:100%;
+  max-width:420px;
+  background:#0c1426;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,.6);
+  border:1px solid rgba(255,255,255,.1);
+}
 
-    <a class="btn" role="listitem" href="https://www.linkedin.com/in/olivia-flowerday" target="_blank" rel="noopener noreferrer" aria-label="Open Olivia's LinkedIn profile">
-      <span class="left">
-        <span class="label">LinkedIn</span>
-        <span class="value">www.linkedin.com/in/olivia-flowerday</span>
-      </span>
-      <span class="pill row"><span class="dot teal" aria-hidden="true"></span><span class="small">View</span></span>
-    </a>
+.banner{
+  padding:22px;
+  background:linear-gradient(135deg,#0091d5,#00a3a1);
+}
 
-    first-last.vcf
-      <span class="left">
-        <span class="label">Save contact (.vcf)</span>
-        <span class="value">Add Olivia to your contacts</span>
-      </span>
-      <span class="pill row"><span class="dot white" aria-hidden="true"></span><span class="small">Save</span></span>
-    </a>
+.name{font-size:1.6rem;font-weight:700;margin:0;}
+.role{margin:5px 0;font-size:.95rem;}
+.meta{font-size:.85rem;opacity:.85;}
+
+.content{padding:18px;}
+
+.headline{
+  font-size:.95rem;
+  margin-bottom:14px;
+  opacity:.8;
+}
+
+.grid{
+  display:grid;
+  gap:10px;
+}
+
+.btn{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px;
+  border-radius:12px;
+  background:#0f1a33;
+  border:1px solid rgba(255,255,255,.1);
+  text-decoration:none;
+  color:#fff;
+}
+
+.qrwrap{
+  margin-top:16px;
+  text-align:center;
+}
+
+.qrimg{
+  width:180px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.15);
+}
+
+.footer{
+  padding:14px;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.note{
+  font-size:.85rem;
+  opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="banner">
+    <h1 class="name">Olivia Flowerday</h1>
+    <div class="role">Senior Manager • KPMG – Private Enterprise</div>
+    <div class="meta">Hamilton</div>
   </div>
 
-  <div class="qrwrap" aria-label="QR code">
-    qr.png
-    <div class="small">Scan to open this card on your phone.</div>
-  </div>
-</section>
+  <div class="content">
+    <p class="headline">Get in touch, book time, or save my details.</p>
 
-<footer class="footer">
-  <p class="note">Tip: Tap ‘Save contact’ to add my details, or bookmark this page for easy access.</p>
-</footer>
+    <div class="grid">
+
+      <a class="btn" href="mailto:oflowerday@kpmg.co.nz">
+        <span>Email</span>
+        <span>oflowerday@kpmg.co.nz</span>
+      </a>
+
+      tel:+64279198811
+        <span>Mobile</span>
+        <span>027 919 8811</span>
+      </a>
+
+      <a class="btn" href="https://outlook.office.com/bookwithme/" target="_blank">
+        <span>Book time</span>
+        <span>Open</span>
+      </a>
+
+      <a class="btn" href="https://www.linkedin.com/in/olivia-flowerday" target="_blank">
+        <span>LinkedIn</span>
+        <span>View</span>
+      </a>
+
+      first-last.vcf
+        <span>Save contact (.vcf)</span>
+        <span>Download</span>
+      </a>
+
+    </div>
+
+    <div class="qrwrap">
+      qr.png
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p class="note">Tip: Tap ‘Save contact’ to add my details, or bookmark this page for easy access.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
